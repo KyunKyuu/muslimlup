@@ -34,10 +34,7 @@
             
             <!-- Left Panel (Text & Copywriting from MLUP.html) -->
             <div class="lg:col-span-7 space-y-6 pr-0 lg:pr-12">
-                <span class="px-3 py-1 rounded border border-slate-400/40 text-[10px] font-mono tracking-widest uppercase text-slate-800 bg-white/60 shadow-sm">
-                    SIAPA KAMI
-                </span>
-
+                
                 <h2 class="font-serif-custom text-4xl sm:text-6xl font-normal tracking-tight text-slate-950 leading-[1.1]">
                     Bukan lembaga besar. Tapi <span class="italic text-slate-700">ruang yang terasa.</span>
                 </h2>

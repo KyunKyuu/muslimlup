@@ -194,19 +194,12 @@
 
     <!-- 3. Bottom Blueprint Information Panel -->
     <div class="relative z-20 h-44 flex items-center justify-between px-6 sm:px-28 border-t border-white/30">
-        <div class="w-full flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+        <div class="w-full flex items-center justify-between">
             
             <!-- Bottom Left Badge -->
             <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded border border-white/40 text-[11px] font-mono tracking-widest uppercase text-white bg-black/40 backdrop-blur-md">
                 <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
                 AT YOUR SERVICE
-            </div>
-
-            <!-- Bottom Center / Right Copywriting Block -->
-            <div class="max-w-xl">
-                <p class="text-white text-xs sm:text-sm font-sans leading-relaxed font-normal drop-shadow">
-                    MLUP Academy mempertemukan pelajar, mahasiswa, dan para pejuang akademik muslim di satu ruang tanpa sekat. Ilmu dibagikan oleh orang-orang yang benar-benar menguasai bidangnya. Nilai-nilai Islam dijaga bukan sebagai aturan, tapi sebagai cara hidup.
-                </p>
             </div>
 
         </div>

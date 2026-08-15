@@ -22,22 +22,13 @@
     <div class="relative z-20 max-w-7xl mx-auto px-6 sm:px-24 py-20 w-full">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             
-            <!-- Left Side: Quote Text (Pure Typography) -->
+            <!-- Left Side: Pure Quote Text ONLY -->
             <div class="lg:col-span-7 space-y-6 pr-0 lg:pr-6">
-                
-                <span class="px-3.5 py-1.5 rounded border border-slate-400/40 text-[10px] font-mono tracking-widest uppercase text-slate-800 bg-white/70 shadow-sm inline-block backdrop-blur-sm">
-                    UNDANGAN GERAKAN
-                </span>
-
-                <div class="space-y-4 max-w-lg">
+                <div class="max-w-lg">
                     <p class="font-serif-custom text-2xl sm:text-4xl text-slate-950 italic leading-relaxed drop-shadow-sm">
                         "Jika kamu percaya bahwa ada yang seharusnya bergerak mengisi ruang ini — maka kamu sedang membaca undangan untuk menjadi bagian dari yang bergerak."
                     </p>
-                    <p class="text-xs font-mono text-slate-600 font-semibold tracking-wider uppercase pt-2">
-                        — MLUP ACADEMY · 100% VOLUNTEER DRIVEN
-                    </p>
                 </div>
-
             </div>
 
             <!-- Right Side Spacer -->
