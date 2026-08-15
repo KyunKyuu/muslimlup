@@ -27,7 +27,7 @@
         
         <!-- Brand Logo (Left Grid Alignment using logo_mlup.jpg) -->
         <a href="#" class="flex items-center gap-3 group">
-            <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-full overflow-hidden border border-white/40 shadow-md group-hover:scale-105 transition-transform flex items-center justify-center bg-white">
+            <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-full overflow-hidden border border-white/40 shadow-md group-hover:scale-105 transition-transform flex items-center justify-center bg-white shrink-0">
                 <img src="{{ asset('images/logo_mlup.jpg') }}" alt="MLUP Logo" class="w-full h-full object-cover">
             </div>
             <span class="font-serif-custom text-lg sm:text-xl font-normal tracking-wide text-white drop-shadow">
@@ -128,34 +128,51 @@
             </a>
         </nav>
 
-        <!-- Top Right Action Button -->
+        <!-- Top Right Action Button (Desktop Only, Hidden on Mobile) -->
         <div class="flex items-center gap-3">
-            <a href="#hubungi" class="inline-flex items-center gap-2 px-3.5 py-1.5 sm:px-5 sm:py-2 rounded-md bg-black/80 hover:bg-black text-white text-[10px] sm:text-[11px] font-bold tracking-widest uppercase border border-white/30 backdrop-blur-md transition-all hover:scale-105 shadow-xl">
+            <a href="#hubungi" class="hidden md:inline-flex items-center gap-2 px-5 py-2 rounded-md bg-black/80 hover:bg-black text-white text-[11px] font-bold tracking-widest uppercase border border-white/30 backdrop-blur-md transition-all hover:scale-105 shadow-xl">
                 BERGABUNG
-                <i data-lucide="arrow-right" class="w-3 h-3 sm:w-3.5 sm:h-3.5 text-white"></i>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-white"></i>
             </a>
 
-            <!-- Mobile Menu Toggle -->
-            <button @click="mobileOpen = !mobileOpen" class="p-2 text-white md:hidden">
+            <!-- Mobile Menu Toggle Button -->
+            <button @click="mobileOpen = !mobileOpen" class="p-2 text-white md:hidden hover:bg-white/10 rounded-lg transition-colors">
                 <i data-lucide="menu" x-show="!mobileOpen" class="w-6 h-6"></i>
                 <i data-lucide="x" x-show="mobileOpen" class="w-6 h-6"></i>
             </button>
         </div>
 
-        <!-- Mobile Drawer -->
+        <!-- Mobile Drawer Menu (Contains BERGABUNG Button on Mobile) -->
         <div x-show="mobileOpen" 
-             x-transition
-             class="md:hidden absolute top-full left-5 right-5 mt-2 p-5 rounded-2xl bg-slate-950/95 border border-white/20 shadow-2xl space-y-3 z-50 text-left">
-            <a @click="mobileOpen = false" href="#" class="block text-white font-medium text-sm">Beranda</a>
-            <div class="space-y-1 pl-3 border-l border-white/20">
+             x-transition:enter="transition ease-out duration-200"
+             x-transition:enter-start="opacity-0 -translate-y-4"
+             x-transition:enter-end="opacity-100 translate-y-0"
+             x-transition:leave="transition ease-in duration-150"
+             x-transition:leave-start="opacity-100 translate-y-0"
+             x-transition:leave-end="opacity-0 -translate-y-4"
+             class="md:hidden absolute top-full left-5 right-5 mt-2 p-5 rounded-2xl bg-slate-950/95 border border-white/20 shadow-2xl space-y-3 z-50 text-left backdrop-blur-xl">
+            
+            <a @click="mobileOpen = false" href="#" class="block text-white font-semibold text-sm py-1">Beranda</a>
+            
+            <div class="space-y-1.5 pl-3 border-l border-white/20 py-1">
                 <p class="text-[10px] font-mono text-sky-300 font-bold uppercase">Program</p>
-                <a @click="mobileOpen = false" href="https://ramadhanberjaya.com/" target="_blank" class="block text-white/80 text-xs py-1">🌙 Ramadhan Berjaya ↗</a>
-                <a @click="mobileOpen = false" href="https://riunganqurban.com/" target="_blank" class="block text-white/80 text-xs py-1">🐑 PARQOUR ↗</a>
-                <a @click="mobileOpen = false" href="https://hotline.muslimlup.org/" target="_blank" class="block text-white/80 text-xs py-1">📞 Hotline Akademik ↗</a>
+                <a @click="mobileOpen = false" href="https://ramadhanberjaya.com/" target="_blank" class="block text-white/90 text-xs py-1 hover:text-white">🌙 Ramadhan Berjaya ↗</a>
+                <a @click="mobileOpen = false" href="https://riunganqurban.com/" target="_blank" class="block text-white/90 text-xs py-1 hover:text-white">🐑 PARQOUR ↗</a>
+                <a @click="mobileOpen = false" href="https://hotline.muslimlup.org/" target="_blank" class="block text-white/90 text-xs py-1 hover:text-white">📞 Hotline Akademik ↗</a>
             </div>
-            <a @click="mobileOpen = false" href="#tentang" class="block text-white/90 text-sm">Tentang</a>
-            <a @click="mobileOpen = false" href="#" class="block text-white/90 text-sm">Berita</a>
-            <a @click="mobileOpen = false" href="#hubungi" class="block text-white/90 text-sm">Hubungi Kami</a>
+
+            <a @click="mobileOpen = false" href="#tentang" class="block text-white/90 hover:text-white font-medium text-sm py-1">Tentang</a>
+            <a @click="mobileOpen = false" href="#" class="block text-white/90 hover:text-white font-medium text-sm py-1">Berita</a>
+            <a @click="mobileOpen = false" href="#hubungi" class="block text-white/90 hover:text-white font-medium text-sm py-1">Hubungi Kami</a>
+            
+            <!-- BERGABUNG Button inside Mobile Drawer -->
+            <div class="pt-3 border-t border-white/15">
+                <a @click="mobileOpen = false" href="#hubungi" 
+                   class="w-full inline-flex items-center justify-center gap-2 px-5 py-3 text-xs font-bold tracking-widest uppercase text-slate-950 bg-white hover:bg-sky-50 rounded-xl shadow-lg transition-all">
+                    <span>BERGABUNG SEKARANG</span>
+                    <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-slate-950"></i>
+                </a>
+            </div>
         </div>
 
     </header>
