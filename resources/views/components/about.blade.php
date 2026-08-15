@@ -6,36 +6,36 @@
         <div class="absolute top-16 left-0 right-0 border-b border-slate-400/30"></div>
 
         <!-- Left Vertical Blueprint Line -->
-        <div class="absolute top-0 bottom-0 left-12 sm:left-20 border-r border-slate-400/30"></div>
+        <div class="absolute top-0 bottom-0 left-5 sm:left-20 border-r border-slate-400/30"></div>
 
         <!-- 65% Vertical Dividing Blueprint Line -->
         <div class="absolute top-0 bottom-0 left-[65%] border-r border-slate-400/30 hidden lg:block"></div>
 
         <!-- Right Vertical Blueprint Line -->
-        <div class="absolute top-0 bottom-0 right-12 sm:right-20 border-l border-slate-400/30"></div>
+        <div class="absolute top-0 bottom-0 right-5 sm:right-20 border-l border-slate-400/30"></div>
 
         <!-- Sparkle Crosshairs (✦) -->
-        <div class="absolute top-16 left-12 sm:left-20 -translate-x-1/2 -translate-y-1/2 text-slate-700 text-sm">✦</div>
+        <div class="absolute top-16 left-5 sm:left-20 -translate-x-1/2 -translate-y-1/2 text-slate-700 text-sm">✦</div>
         <div class="absolute top-16 left-[65%] -translate-x-1/2 -translate-y-1/2 text-slate-700 text-sm hidden lg:block">✦</div>
-        <div class="absolute top-16 right-12 sm:right-20 translate-x-1/2 -translate-y-1/2 text-slate-700 text-sm">✦</div>
+        <div class="absolute top-16 right-5 sm:right-20 translate-x-1/2 -translate-y-1/2 text-slate-700 text-sm">✦</div>
     </div>
 
     <!-- Section Content Container -->
-    <div class="relative z-20 min-h-screen flex flex-col justify-between px-6 sm:px-24 py-12">
+    <div class="relative z-20 min-h-screen flex flex-col justify-between px-8 sm:px-24 py-12">
         
         <!-- Header Label Row -->
-        <div class="h-16 flex items-center justify-between text-xs font-mono text-slate-600 tracking-widest">
-            <span class="pl-8 sm:pl-0">02 — SIAPA KAMI</span>
-            <span class="pr-8 sm:pr-0">MLUP ACADEMY 2026</span>
+        <div class="h-16 flex items-center justify-between text-[11px] sm:text-xs font-mono text-slate-600 tracking-widest">
+            <span>02 — SIAPA KAMI</span>
+            <span>MLUP ACADEMY 2026</span>
         </div>
 
         <!-- Main Body Split Grid -->
-        <div class="flex-grow grid grid-cols-1 lg:grid-cols-12 gap-8 items-center py-16">
+        <div class="flex-grow grid grid-cols-1 lg:grid-cols-12 gap-8 items-center py-12 sm:py-16">
             
             <!-- Left Panel (Text & Copywriting from MLUP.html) -->
             <div class="lg:col-span-7 space-y-6 pr-0 lg:pr-12">
                 
-                <h2 class="font-serif-custom text-4xl sm:text-6xl font-normal tracking-tight text-slate-950 leading-[1.1]">
+                <h2 class="font-serif-custom text-3xl sm:text-6xl font-normal tracking-tight text-slate-950 leading-[1.1]">
                     Bukan lembaga besar. Tapi <span class="italic text-slate-700">ruang yang terasa.</span>
                 </h2>
 
@@ -53,9 +53,9 @@
 
             <!-- Right Panel (Quote Card ONLY from MLUP.html) -->
             <div class="lg:col-span-5">
-                <div class="p-8 sm:p-10 rounded-2xl bg-white/90 backdrop-blur-md border border-slate-300 shadow-xl space-y-6 relative overflow-hidden">
-                    <div class="text-slate-400 font-serif-custom text-6xl leading-none opacity-40">"</div>
-                    <p class="font-serif-custom text-2xl sm:text-3xl text-slate-900 italic leading-relaxed">
+                <div class="p-6 sm:p-10 rounded-2xl bg-white/90 backdrop-blur-md border border-slate-300 shadow-xl space-y-4 sm:space-y-6 relative overflow-hidden">
+                    <div class="text-slate-400 font-serif-custom text-5xl sm:text-6xl leading-none opacity-40">"</div>
+                    <p class="font-serif-custom text-xl sm:text-3xl text-slate-900 italic leading-relaxed">
                         Ada ruang yang kosong di dunia akademik muslim Indonesia — dan tidak ada yang bergerak untuk mengisinya.
                     </p>
                     <div class="pt-4 border-t border-slate-200">
@@ -68,25 +68,25 @@
 
         </div>
 
-        <!-- Seamless Blueprint 3 Columns (No Cards, No Color Breaks) -->
+        <!-- Seamless Blueprint 3 Columns (Responsive Mobile Layout) -->
         <div class="py-12 border-t border-slate-400/30">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 divide-y md:divide-y-0 md:divide-x divide-slate-400/30">
                 
-                <div class="pt-6 md:pt-0 md:pr-6 space-y-2">
+                <div class="pt-4 md:pt-0 md:pr-6 space-y-2">
                     <span class="text-[10px] font-mono text-slate-600 tracking-widest uppercase font-semibold">01 / UNTUK SIAPA</span>
-                    <h4 class="font-serif-custom text-xl text-slate-950 font-normal">Pelajar & Pejuang Akademik</h4>
+                    <h4 class="font-serif-custom text-lg sm:text-xl text-slate-950 font-normal">Pelajar & Pejuang Akademik</h4>
                     <p class="text-slate-700 text-xs leading-relaxed font-sans">Pelajar, mahasiswa, Gen-Z, profesional muda, & donatur akademik.</p>
                 </div>
 
                 <div class="pt-6 md:pt-0 md:px-6 space-y-2">
                     <span class="text-[10px] font-mono text-slate-600 tracking-widest uppercase font-semibold">02 / BERGERAK DI</span>
-                    <h4 class="font-serif-custom text-xl text-slate-950 font-normal">Pendidikan & Sosial</h4>
+                    <h4 class="font-serif-custom text-lg sm:text-xl text-slate-950 font-normal">Pendidikan & Sosial</h4>
                     <p class="text-slate-700 text-xs leading-relaxed font-sans">Pendidikan, akademik, komunitas, sosial, & media Islami.</p>
                 </div>
 
                 <div class="pt-6 md:pt-0 md:pl-6 space-y-2">
                     <span class="text-[10px] font-mono text-slate-600 tracking-widest uppercase font-semibold">03 / BASIS & JANGKAUAN</span>
-                    <h4 class="font-serif-custom text-xl text-slate-950 font-normal">Bandung ke Indonesia</h4>
+                    <h4 class="font-serif-custom text-lg sm:text-xl text-slate-950 font-normal">Bandung ke Indonesia</h4>
                     <p class="text-slate-700 text-xs leading-relaxed font-sans">Berbasis di Bandung, menjangkau seluruh pejuang akademik Indonesia.</p>
                 </div>
 

@@ -1,7 +1,7 @@
 <section class="relative min-h-screen w-full bg-cover bg-center bg-no-repeat text-white flex flex-col justify-between overflow-hidden" 
          style="background-image: url('{{ asset('images/heropage.png') }}');">
     
-    <!-- Architectural Blueprint Grid Overlay Lines (NO GRADIENT OVERLAY) -->
+    <!-- Architectural Blueprint Grid Overlay Lines (Responsive Mobile Position) -->
     <div class="absolute inset-0 pointer-events-none z-10">
         <!-- Top Horizontal Line (under nav) -->
         <div class="absolute top-20 left-0 right-0 border-b border-white/30"></div>
@@ -10,16 +10,16 @@
         <div class="absolute bottom-44 left-0 right-0 border-b border-white/30"></div>
 
         <!-- Left Vertical Line -->
-        <div class="absolute top-0 bottom-0 left-12 sm:left-20 border-r border-white/30"></div>
+        <div class="absolute top-0 bottom-0 left-5 sm:left-20 border-r border-white/30"></div>
 
         <!-- Right Vertical Line -->
-        <div class="absolute top-0 bottom-0 right-12 sm:right-20 border-l border-white/30"></div>
+        <div class="absolute top-0 bottom-0 right-5 sm:right-20 border-l border-white/30"></div>
 
         <!-- Intersection Sparkle/Crosshair (✦) Icons -->
-        <div class="absolute top-20 left-12 sm:left-20 -translate-x-1/2 -translate-y-1/2 text-white text-sm font-light select-none">✦</div>
-        <div class="absolute top-20 right-12 sm:right-20 translate-x-1/2 -translate-y-1/2 text-white text-sm font-light select-none">✦</div>
-        <div class="absolute bottom-44 left-12 sm:left-20 -translate-x-1/2 translate-y-1/2 text-white text-sm font-light select-none">✦</div>
-        <div class="absolute bottom-44 right-12 sm:right-20 translate-x-1/2 translate-y-1/2 text-white text-sm font-light select-none">✦</div>
+        <div class="absolute top-20 left-5 sm:left-20 -translate-x-1/2 -translate-y-1/2 text-white text-sm font-light select-none">✦</div>
+        <div class="absolute top-20 right-5 sm:right-20 translate-x-1/2 -translate-y-1/2 text-white text-sm font-light select-none">✦</div>
+        <div class="absolute bottom-44 left-5 sm:left-20 -translate-x-1/2 translate-y-1/2 text-white text-sm font-light select-none">✦</div>
+        <div class="absolute bottom-44 right-5 sm:right-20 translate-x-1/2 translate-y-1/2 text-white text-sm font-light select-none">✦</div>
     </div>
 
     <!-- 1. Top Integrated Blueprint Navigation Header (using logo_mlup.jpg) -->
@@ -27,10 +27,10 @@
         
         <!-- Brand Logo (Left Grid Alignment using logo_mlup.jpg) -->
         <a href="#" class="flex items-center gap-3 group">
-            <div class="w-9 h-9 rounded-full overflow-hidden border border-white/40 shadow-md group-hover:scale-105 transition-transform flex items-center justify-center bg-white">
+            <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-full overflow-hidden border border-white/40 shadow-md group-hover:scale-105 transition-transform flex items-center justify-center bg-white">
                 <img src="{{ asset('images/logo_mlup.jpg') }}" alt="MLUP Logo" class="w-full h-full object-cover">
             </div>
-            <span class="font-serif-custom text-xl font-normal tracking-wide text-white drop-shadow">
+            <span class="font-serif-custom text-lg sm:text-xl font-normal tracking-wide text-white drop-shadow">
                 MLUP<span class="italic text-sky-200">.Academy</span>
             </span>
         </a>
@@ -130,9 +130,9 @@
 
         <!-- Top Right Action Button -->
         <div class="flex items-center gap-3">
-            <a href="#hubungi" class="inline-flex items-center gap-2 px-5 py-2 rounded-md bg-black/80 hover:bg-black text-white text-[11px] font-bold tracking-widest uppercase border border-white/30 backdrop-blur-md transition-all hover:scale-105 shadow-xl">
+            <a href="#hubungi" class="inline-flex items-center gap-2 px-3.5 py-1.5 sm:px-5 sm:py-2 rounded-md bg-black/80 hover:bg-black text-white text-[10px] sm:text-[11px] font-bold tracking-widest uppercase border border-white/30 backdrop-blur-md transition-all hover:scale-105 shadow-xl">
                 BERGABUNG
-                <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-white"></i>
+                <i data-lucide="arrow-right" class="w-3 h-3 sm:w-3.5 sm:h-3.5 text-white"></i>
             </a>
 
             <!-- Mobile Menu Toggle -->
@@ -145,7 +145,7 @@
         <!-- Mobile Drawer -->
         <div x-show="mobileOpen" 
              x-transition
-             class="md:hidden absolute top-full left-6 right-6 mt-2 p-5 rounded-2xl bg-slate-950/95 border border-white/20 shadow-2xl space-y-3 z-50 text-left">
+             class="md:hidden absolute top-full left-5 right-5 mt-2 p-5 rounded-2xl bg-slate-950/95 border border-white/20 shadow-2xl space-y-3 z-50 text-left">
             <a @click="mobileOpen = false" href="#" class="block text-white font-medium text-sm">Beranda</a>
             <div class="space-y-1 pl-3 border-l border-white/20">
                 <p class="text-[10px] font-mono text-sky-300 font-bold uppercase">Program</p>
@@ -160,13 +160,8 @@
 
     </header>
 
-    <!-- Left Vertical Grid Icon Accent -->
-    <div class="absolute top-28 left-4 sm:left-7 z-20 text-white/80 hidden sm:block">
-        <i data-lucide="layout-grid" class="w-4 h-4"></i>
-    </div>
-
     <!-- 2. Main Hero Content Area -->
-    <div class="relative z-20 flex-grow flex flex-col justify-center px-6 sm:px-28 py-12">
+    <div class="relative z-20 flex-grow flex flex-col justify-center px-8 sm:px-28 py-12">
         <div class="max-w-3xl space-y-6">
             
             <!-- Main Title -->
@@ -193,7 +188,7 @@
     </div>
 
     <!-- 3. Bottom Blueprint Information Panel -->
-    <div class="relative z-20 h-44 flex items-center justify-between px-6 sm:px-28 border-t border-white/30">
+    <div class="relative z-20 h-44 flex items-center justify-between px-8 sm:px-28 border-t border-white/30">
         <div class="w-full flex items-center justify-between">
             
             <!-- Bottom Left Badge -->

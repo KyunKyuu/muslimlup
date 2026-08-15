@@ -1,26 +1,26 @@
-<section id="hubungi" class="relative py-28 bg-[#EAE6DF] text-slate-950 overflow-hidden border-t border-slate-400/30">
+<section id="hubungi" class="relative py-20 sm:py-28 bg-[#EAE6DF] text-slate-950 overflow-hidden border-t border-slate-400/30">
     
     <!-- Blueprint Grid Overlay Lines -->
     <div class="absolute inset-0 pointer-events-none z-10">
-        <div class="absolute top-0 bottom-0 left-12 sm:left-20 border-r border-slate-400/30"></div>
-        <div class="absolute top-0 bottom-0 right-12 sm:right-20 border-l border-slate-400/30"></div>
+        <div class="absolute top-0 bottom-0 left-5 sm:left-20 border-r border-slate-400/30"></div>
+        <div class="absolute top-0 bottom-0 right-5 sm:right-20 border-l border-slate-400/30"></div>
 
         <!-- Crosshair Sparkles (✦) -->
-        <div class="absolute top-10 left-12 sm:left-20 -translate-x-1/2 text-slate-700 text-sm">✦</div>
-        <div class="absolute bottom-10 left-12 sm:left-20 -translate-x-1/2 text-slate-700 text-sm">✦</div>
-        <div class="absolute top-10 right-12 sm:right-20 translate-x-1/2 text-slate-700 text-sm">✦</div>
-        <div class="absolute bottom-10 right-12 sm:right-20 translate-x-1/2 text-slate-700 text-sm">✦</div>
+        <div class="absolute top-10 left-5 sm:left-20 -translate-x-1/2 text-slate-700 text-sm">✦</div>
+        <div class="absolute bottom-10 left-5 sm:left-20 -translate-x-1/2 text-slate-700 text-sm">✦</div>
+        <div class="absolute top-10 right-5 sm:right-20 translate-x-1/2 text-slate-700 text-sm">✦</div>
+        <div class="absolute bottom-10 right-5 sm:right-20 translate-x-1/2 text-slate-700 text-sm">✦</div>
     </div>
 
     <!-- Main Content Container (Cream Blueprint Style - Section 2 Matching Color) -->
-    <div class="relative z-20 max-w-5xl mx-auto px-6 sm:px-24 text-center space-y-8">
+    <div class="relative z-20 max-w-5xl mx-auto px-8 sm:px-24 text-center space-y-8">
         
         <div class="space-y-4 max-w-3xl mx-auto">
             <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded border border-slate-400/40 text-[10px] font-mono tracking-widest uppercase text-slate-800 bg-white/80 shadow-sm">
                 ✦ UNDANGAN KOLABORASI
             </span>
             
-            <h2 class="font-serif-custom text-4xl sm:text-6xl font-normal tracking-tight text-slate-950 leading-tight">
+            <h2 class="font-serif-custom text-3xl sm:text-6xl font-normal tracking-tight text-slate-950 leading-tight">
                 Siap jadi bagian dari <span class="italic text-slate-700">gerakan ini?</span>
             </h2>
 

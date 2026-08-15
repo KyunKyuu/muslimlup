@@ -1,12 +1,12 @@
-<footer class="relative py-20 bg-[#EAE6DF] text-slate-900 border-t border-slate-400/30">
+<footer class="relative py-16 sm:py-20 bg-[#EAE6DF] text-slate-900 border-t border-slate-400/30">
     
     <!-- Blueprint Grid Lines -->
     <div class="absolute inset-0 pointer-events-none z-10">
-        <div class="absolute top-0 bottom-0 left-12 sm:left-20 border-r border-slate-400/30"></div>
-        <div class="absolute top-0 bottom-0 right-12 sm:right-20 border-l border-slate-400/30"></div>
+        <div class="absolute top-0 bottom-0 left-5 sm:left-20 border-r border-slate-400/30"></div>
+        <div class="absolute top-0 bottom-0 right-5 sm:right-20 border-l border-slate-400/30"></div>
     </div>
 
-    <div class="relative z-20 max-w-7xl mx-auto px-6 sm:px-24">
+    <div class="relative z-20 max-w-7xl mx-auto px-8 sm:px-24">
         
         <!-- Main Footer Links Split -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-16 border-b border-slate-400/30">
@@ -14,10 +14,10 @@
             <!-- Col 1: Brand Info (using logo_mlup.jpg) -->
             <div class="lg:col-span-2 space-y-4 pr-0 lg:pr-6">
                 <a href="#" class="flex items-center gap-3 group">
-                    <div class="w-10 h-10 rounded-full overflow-hidden border border-slate-400/40 shadow-sm flex items-center justify-center bg-white shrink-0">
+                    <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full overflow-hidden border border-slate-400/40 shadow-sm flex items-center justify-center bg-white shrink-0">
                         <img src="{{ asset('images/logo_mlup.jpg') }}" alt="MLUP Logo" class="w-full h-full object-cover">
                     </div>
-                    <span class="font-serif-custom text-3xl font-normal tracking-wide text-slate-950">
+                    <span class="font-serif-custom text-2xl sm:text-3xl font-normal tracking-wide text-slate-950">
                         MLUP <span class="italic text-slate-700">Academy</span>
                     </span>
                 </a>
