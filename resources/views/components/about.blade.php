@@ -42,17 +42,11 @@
                 <p class="text-slate-800 text-base sm:text-lg font-sans leading-relaxed max-w-xl">
                     MLUP Academy mempertemukan pelajar, mahasiswa, dan para pejuang akademik muslim di satu ruang tanpa sekat latar belakang atau kemampuan. Ilmu dibagikan oleh orang-orang yang benar-benar menguasai bidangnya. Nilai-nilai Islam dijaga bukan sebagai aturan, tapi sebagai cara hidup.
                 </p>
-
-                <div class="pt-4 flex items-center gap-4">
-                    <a href="#program" class="inline-flex items-center gap-3 px-6 py-3.5 bg-slate-950 hover:bg-slate-800 text-white text-xs font-bold tracking-widest uppercase rounded shadow-xl transition-all group">
-                        <span>EKSPLORASI PROGRAM</span>
-                        <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform"></i>
-                    </a>
-                </div>
             </div>
 
-            <!-- Right Panel (Quote Card ONLY from MLUP.html) -->
-            <div class="lg:col-span-5">
+            <!-- Right Panel (Quote Card + EKSPLORASI PROGRAM Button Below It) -->
+            <div class="lg:col-span-5 space-y-6">
+                <!-- Quote Card -->
                 <div class="p-6 sm:p-10 rounded-2xl bg-white/90 backdrop-blur-md border border-slate-300 shadow-xl space-y-4 sm:space-y-6 relative overflow-hidden">
                     <div class="text-slate-400 font-serif-custom text-5xl sm:text-6xl leading-none opacity-40">"</div>
                     <p class="font-serif-custom text-xl sm:text-3xl text-slate-900 italic leading-relaxed">
@@ -63,6 +57,14 @@
                             23 Desember 2025 · Hari pertama MLUP
                         </span>
                     </div>
+                </div>
+
+                <!-- EKSPLORASI PROGRAM Button Positioned Below Quote Card -->
+                <div class="pt-2">
+                    <a href="#program" class="inline-flex items-center gap-3 px-6 py-3.5 bg-slate-950 hover:bg-slate-800 text-white text-xs font-bold tracking-widest uppercase rounded shadow-xl transition-all group">
+                        <span>EKSPLORASI PROGRAM</span>
+                        <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
                 </div>
             </div>
 
