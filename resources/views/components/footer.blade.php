@@ -11,10 +11,15 @@
         <!-- Main Footer Links Split -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-16 border-b border-slate-400/30">
             
-            <!-- Col 1: Brand Info -->
+            <!-- Col 1: Brand Info (using logo_mlup.jpg) -->
             <div class="lg:col-span-2 space-y-4 pr-0 lg:pr-6">
-                <a href="#" class="font-serif-custom text-3xl font-normal tracking-wide text-slate-950 inline-block">
-                    MLUP <span class="italic text-slate-700">Academy</span>
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-full overflow-hidden border border-slate-400/40 shadow-sm flex items-center justify-center bg-white shrink-0">
+                        <img src="{{ asset('images/logo_mlup.jpg') }}" alt="MLUP Logo" class="w-full h-full object-cover">
+                    </div>
+                    <span class="font-serif-custom text-3xl font-normal tracking-wide text-slate-950">
+                        MLUP <span class="italic text-slate-700">Academy</span>
+                    </span>
                 </a>
                 <p class="text-slate-800 text-sm max-w-sm leading-relaxed font-sans">
                     Ruang kebaikan untuk pejuang akademik muslim Indonesia — belajar, tumbuh, dan memberi dampak nyata.

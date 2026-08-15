@@ -22,13 +22,13 @@
         <div class="absolute bottom-44 right-12 sm:right-20 translate-x-1/2 translate-y-1/2 text-white text-sm font-light select-none">✦</div>
     </div>
 
-    <!-- 1. Top Integrated Blueprint Navigation Header (MLUP.html Content) -->
+    <!-- 1. Top Integrated Blueprint Navigation Header (using logo_mlup.jpg) -->
     <header x-data="{ dropdownOpen: false, mobileOpen: false }" class="relative z-30 h-20 flex items-center justify-between px-6 sm:px-24">
         
-        <!-- Brand Logo (Left Grid Alignment) -->
+        <!-- Brand Logo (Left Grid Alignment using logo_mlup.jpg) -->
         <a href="#" class="flex items-center gap-3 group">
-            <div class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md border border-white/40 flex items-center justify-center text-white group-hover:scale-105 transition-transform shadow-md">
-                <i data-lucide="droplet" class="w-4 h-4 fill-white text-transparent"></i>
+            <div class="w-9 h-9 rounded-full overflow-hidden border border-white/40 shadow-md group-hover:scale-105 transition-transform flex items-center justify-center bg-white">
+                <img src="{{ asset('images/logo_mlup.jpg') }}" alt="MLUP Logo" class="w-full h-full object-cover">
             </div>
             <span class="font-serif-custom text-xl font-normal tracking-wide text-white drop-shadow">
                 MLUP<span class="italic text-sky-200">.Academy</span>
