@@ -1,3 +1,11 @@
+@props(['contributors' => null])
+
+@php
+    if (is_null($contributors) || $contributors->isEmpty()) {
+        $contributors = \App\Models\Contributor::orderBy('order', 'asc')->get();
+    }
+@endphp
+
 <section class="relative min-h-screen w-full bg-cover bg-center bg-no-repeat text-white flex flex-col justify-between overflow-hidden" 
          style="background-image: url('{{ asset('images/heropage.png') }}');">
     
@@ -204,7 +212,7 @@
         </div>
     </div>
 
-    <!-- 3. Kontributor MLUP Continuous Slide Animation Section (27 New Contributor Cards) -->
+    <!-- 3. Dynamic Kontributor MLUP Continuous Slide Animation Section -->
     <div class="relative z-20 py-6 border-t border-white/30 bg-black/30 backdrop-blur-md overflow-hidden"
          x-data="{ 
              scrollLeft() { $refs.sliderTrack.scrollBy({ left: -350, behavior: 'smooth' }); },
@@ -238,23 +246,23 @@
             </div>
         </div>
 
-        <!-- Continuous Infinite Marquee & Drag Slider Container (Pure Image Display of All 27 Contributors) -->
+        <!-- Continuous Infinite Marquee & Drag Slider Container (Pure Dynamic Image Display) -->
         <div x-ref="sliderTrack" class="overflow-x-auto no-scrollbar scroll-smooth px-8 sm:px-28">
             <div class="animate-marquee-left gap-4 sm:gap-6 py-2">
                 
-                <!-- Set 1: All 27 Contributor Cards -->
-                @for ($i = 1; $i <= 27; $i++)
+                <!-- Set 1: Dynamic Contributor Cards -->
+                @foreach ($contributors as $contributor)
                     <div class="w-52 sm:w-60 h-64 sm:h-72 rounded-2xl overflow-hidden relative group shrink-0 shadow-2xl border border-white/25 hover:border-sky-300/60 transition-all duration-300 hover:-translate-y-1">
-                        <img src="{{ asset('images/pemateri/contributor-' . $i . '.jpg') }}" alt="Kontributor MLUP Academy {{ $i }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="{{ asset($contributor->image_path) }}" alt="Kontributor MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
-                @endfor
+                @endforeach
 
-                <!-- Set 2: Duplicate of All 27 Contributor Cards for Seamless Infinite Loop -->
-                @for ($i = 1; $i <= 27; $i++)
+                <!-- Set 2: Duplicate of Dynamic Contributor Cards for Seamless Infinite Loop -->
+                @foreach ($contributors as $contributor)
                     <div class="w-52 sm:w-60 h-64 sm:h-72 rounded-2xl overflow-hidden relative group shrink-0 shadow-2xl border border-white/25 hover:border-sky-300/60 transition-all duration-300 hover:-translate-y-1">
-                        <img src="{{ asset('images/pemateri/contributor-' . $i . '.jpg') }}" alt="Kontributor MLUP Academy {{ $i }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="{{ asset($contributor->image_path) }}" alt="Kontributor MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
-                @endfor
+                @endforeach
 
             </div>
         </div>
