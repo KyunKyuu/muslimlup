@@ -6,8 +6,8 @@
         <!-- Top Horizontal Line (under nav) -->
         <div class="absolute top-20 left-0 right-0 border-b border-white/30"></div>
 
-        <!-- Bottom Horizontal Line (above footer text block) -->
-        <div class="absolute bottom-44 left-0 right-0 border-b border-white/30"></div>
+        <!-- Bottom Horizontal Line -->
+        <div class="absolute bottom-12 left-0 right-0 border-b border-white/30"></div>
 
         <!-- Left Vertical Line -->
         <div class="absolute top-0 bottom-0 left-5 sm:left-20 border-r border-white/30"></div>
@@ -18,8 +18,8 @@
         <!-- Intersection Sparkle/Crosshair (✦) Icons -->
         <div class="absolute top-20 left-5 sm:left-20 -translate-x-1/2 -translate-y-1/2 text-white text-sm font-light select-none">✦</div>
         <div class="absolute top-20 right-5 sm:right-20 translate-x-1/2 -translate-y-1/2 text-white text-sm font-light select-none">✦</div>
-        <div class="absolute bottom-44 left-5 sm:left-20 -translate-x-1/2 translate-y-1/2 text-white text-sm font-light select-none">✦</div>
-        <div class="absolute bottom-44 right-5 sm:right-20 translate-x-1/2 translate-y-1/2 text-white text-sm font-light select-none">✦</div>
+        <div class="absolute bottom-12 left-5 sm:left-20 -translate-x-1/2 translate-y-1/2 text-white text-sm font-light select-none">✦</div>
+        <div class="absolute bottom-12 right-5 sm:right-20 translate-x-1/2 translate-y-1/2 text-white text-sm font-light select-none">✦</div>
     </div>
 
     <!-- 1. Top Integrated Blueprint Navigation Header (using logo_mlup.jpg) -->
@@ -178,22 +178,22 @@
     </header>
 
     <!-- 2. Main Hero Content Area -->
-    <div class="relative z-20 flex-grow flex flex-col justify-center px-8 sm:px-28 py-12">
-        <div class="max-w-3xl space-y-6">
+    <div class="relative z-20 flex-grow flex flex-col justify-center px-8 sm:px-28 pt-8 pb-4">
+        <div class="max-w-3xl space-y-5">
             
             <!-- Main Title -->
-            <h1 class="font-serif-custom text-4xl sm:text-6xl lg:text-7xl font-normal tracking-tight text-white leading-[1.08] drop-shadow-lg">
+            <h1 class="font-serif-custom text-3xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-white leading-[1.08] drop-shadow-lg">
                 Ruang kebaikan untuk <span class="italic font-light text-sky-100">pejuang akademik</span> muslim Indonesia.
             </h1>
 
             <!-- Subtitle Lead -->
-            <p class="text-white text-base sm:text-xl font-sans font-normal leading-relaxed max-w-xl drop-shadow-md">
+            <p class="text-white/95 text-sm sm:text-lg font-sans font-normal leading-relaxed max-w-xl drop-shadow-md">
                 Belajar, tumbuh, dan memberi dampak nyata. MLUP Academy hadir agar tidak ada yang harus memilih antara menjadi unggul secara akademik dan kuat secara keislaman.
             </p>
 
             <!-- CTA Request Button -->
-            <div class="pt-4">
-                <a href="#program" class="inline-flex items-center gap-3 px-6 py-3.5 bg-black/90 hover:bg-black text-white text-xs font-bold tracking-widest uppercase rounded-lg border border-white/30 backdrop-blur-md shadow-2xl transition-all hover:translate-x-1 group">
+            <div class="pt-2">
+                <a href="#program" class="inline-flex items-center gap-3 px-5 py-3 bg-black/90 hover:bg-black text-white text-xs font-bold tracking-widest uppercase rounded-lg border border-white/30 backdrop-blur-md shadow-2xl transition-all hover:translate-x-1 group">
                     <span>LIHAT PROGRAM</span>
                     <span class="w-5 h-5 rounded bg-white/20 flex items-center justify-center group-hover:translate-x-0.5 transition-transform">
                         <i data-lucide="arrow-right" class="w-3 h-3 text-white"></i>
@@ -204,16 +204,251 @@
         </div>
     </div>
 
-    <!-- 3. Bottom Blueprint Information Panel -->
-    <div class="relative z-20 h-44 flex items-center justify-between px-8 sm:px-28 border-t border-white/30">
-        <div class="w-full flex items-center justify-between">
-            
-            <!-- Bottom Left Badge -->
-            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded border border-white/40 text-[11px] font-mono tracking-widest uppercase text-white bg-black/40 backdrop-blur-md">
-                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
-                AT YOUR SERVICE
+    <!-- 3. Pemateri & Mentor Continuous Slide Animation Section (Matching DNVB & MLUP Blueprint Aesthetic) -->
+    <div class="relative z-20 py-6 border-t border-white/30 bg-black/30 backdrop-blur-md overflow-hidden"
+         x-data="{ 
+             scrollLeft() { $refs.sliderTrack.scrollBy({ left: -300, behavior: 'smooth' }); },
+             scrollRight() { $refs.sliderTrack.scrollBy({ left: 300, behavior: 'smooth' }); }
+         }">
+        
+        <!-- Header & Nav Controls Row -->
+        <div class="px-8 sm:px-28 mb-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <span class="inline-flex items-center gap-2 px-2.5 py-1 rounded border border-white/30 text-[10px] font-mono tracking-widest uppercase text-sky-200 bg-black/50 backdrop-blur-sm">
+                    <span class="w-1.5 h-1.5 rounded-full bg-sky-400 animate-ping"></span>
+                    PEMATERI & MENTOR ACADEMY
+                </span>
+                <span class="text-xs text-white/80 font-sans hidden sm:inline-block">
+                    — Belajar langsung bersama para pakar dan pengajar pilihan.
+                </span>
             </div>
 
+            <!-- Manual Control Arrows (Left / Right) -->
+            <div class="flex items-center gap-2">
+                <button @click="scrollLeft()" 
+                        aria-label="Scroll left"
+                        class="p-2 rounded-full bg-black/60 hover:bg-black text-white border border-white/25 hover:border-white/50 backdrop-blur-md transition-all">
+                    <i data-lucide="chevron-left" class="w-4 h-4"></i>
+                </button>
+                <button @click="scrollRight()" 
+                        aria-label="Scroll right"
+                        class="p-2 rounded-full bg-black/60 hover:bg-black text-white border border-white/25 hover:border-white/50 backdrop-blur-md transition-all">
+                    <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Continuous Infinite Marquee & Drag Slider Container -->
+        <div x-ref="sliderTrack" class="overflow-x-auto no-scrollbar scroll-smooth px-8 sm:px-28">
+            <div class="animate-marquee-left gap-4 sm:gap-6 py-2">
+                
+                <!-- Set 1: Pemateri 1 - 6 -->
+                <!-- Pemateri 1 -->
+                <div class="w-52 sm:w-60 h-64 sm:h-72 rounded-2xl overflow-hidden relative group shrink-0 shadow-2xl border border-white/25 hover:border-sky-300/60 transition-all duration-300 hover:-translate-y-1">
+                    <img src="{{ asset('images/pemateri/pemateri-1.jpg') }}" alt="Pemateri MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent opacity-90 group-hover:opacity-95 transition-opacity"></div>
+                    <div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-[9px] font-mono tracking-widest text-sky-200 uppercase font-semibold">
+                        PEMATERI AKADEMIK
+                    </div>
+                    <div class="absolute bottom-0 inset-x-0 p-4 space-y-1 z-10 text-left">
+                        <h4 class="font-serif-custom text-base sm:text-lg font-normal text-white drop-shadow group-hover:text-sky-200 transition-colors">
+                            Pengajar Doktoral MLUP
+                        </h4>
+                        <p class="text-[11px] sm:text-xs text-white/80 font-sans leading-snug">
+                            Pakar & Mentor Akademik MLUP
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pemateri 2 -->
+                <div class="w-52 sm:w-60 h-64 sm:h-72 rounded-2xl overflow-hidden relative group shrink-0 shadow-2xl border border-white/25 hover:border-sky-300/60 transition-all duration-300 hover:-translate-y-1">
+                    <img src="{{ asset('images/pemateri/pemateri-2.jpg') }}" alt="Pemateri MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent opacity-90 group-hover:opacity-95 transition-opacity"></div>
+                    <div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-[9px] font-mono tracking-widest text-amber-200 uppercase font-semibold">
+                        LINI SOSIAL
+                    </div>
+                    <div class="absolute bottom-0 inset-x-0 p-4 space-y-1 z-10 text-left">
+                        <h4 class="font-serif-custom text-base sm:text-lg font-normal text-white drop-shadow group-hover:text-amber-200 transition-colors">
+                            Mentor Ramadhan Berjaya
+                        </h4>
+                        <p class="text-[11px] sm:text-xs text-white/80 font-sans leading-snug">
+                            Praktisi & Pengajar Kebangsaan
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pemateri 3 -->
+                <div class="w-52 sm:w-60 h-64 sm:h-72 rounded-2xl overflow-hidden relative group shrink-0 shadow-2xl border border-white/25 hover:border-sky-300/60 transition-all duration-300 hover:-translate-y-1">
+                    <img src="{{ asset('images/pemateri/pemateri-3.jpg') }}" alt="Pemateri MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent opacity-90 group-hover:opacity-95 transition-opacity"></div>
+                    <div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-[9px] font-mono tracking-widest text-emerald-200 uppercase font-semibold">
+                        KEPROFESIAN
+                    </div>
+                    <div class="absolute bottom-0 inset-x-0 p-4 space-y-1 z-10 text-left">
+                        <h4 class="font-serif-custom text-base sm:text-lg font-normal text-white drop-shadow group-hover:text-emerald-200 transition-colors">
+                            Pakar Karir & Industri
+                        </h4>
+                        <p class="text-[11px] sm:text-xs text-white/80 font-sans leading-snug">
+                            Konsultan & Pemateri LINTAS
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pemateri 4 -->
+                <div class="w-52 sm:w-60 h-64 sm:h-72 rounded-2xl overflow-hidden relative group shrink-0 shadow-2xl border border-white/25 hover:border-sky-300/60 transition-all duration-300 hover:-translate-y-1">
+                    <img src="{{ asset('images/pemateri/pemateri-4.jpg') }}" alt="Pemateri MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent opacity-90 group-hover:opacity-95 transition-opacity"></div>
+                    <div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-[9px] font-mono tracking-widest text-sky-200 uppercase font-semibold">
+                        BEASISWA MLUP
+                    </div>
+                    <div class="absolute bottom-0 inset-x-0 p-4 space-y-1 z-10 text-left">
+                        <h4 class="font-serif-custom text-base sm:text-lg font-normal text-white drop-shadow group-hover:text-sky-200 transition-colors">
+                            Pendamping Beasiswa UKT
+                        </h4>
+                        <p class="text-[11px] sm:text-xs text-white/80 font-sans leading-snug">
+                            Tim Pengarah Akademis MLUP
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pemateri 5 -->
+                <div class="w-52 sm:w-60 h-64 sm:h-72 rounded-2xl overflow-hidden relative group shrink-0 shadow-2xl border border-white/25 hover:border-sky-300/60 transition-all duration-300 hover:-translate-y-1">
+                    <img src="{{ asset('images/pemateri/pemateri-5.jpg') }}" alt="Pemateri MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent opacity-90 group-hover:opacity-95 transition-opacity"></div>
+                    <div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-[9px] font-mono tracking-widest text-purple-200 uppercase font-semibold">
+                        HOTLINE AKADEMIK
+                    </div>
+                    <div class="absolute bottom-0 inset-x-0 p-4 space-y-1 z-10 text-left">
+                        <h4 class="font-serif-custom text-base sm:text-lg font-normal text-white drop-shadow group-hover:text-purple-200 transition-colors">
+                            Mentor Riset & Doktoral
+                        </h4>
+                        <p class="text-[11px] sm:text-xs text-white/80 font-sans leading-snug">
+                            Peneliti & Dosen Mitra MLUP
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pemateri 6 -->
+                <div class="w-52 sm:w-60 h-64 sm:h-72 rounded-2xl overflow-hidden relative group shrink-0 shadow-2xl border border-white/25 hover:border-sky-300/60 transition-all duration-300 hover:-translate-y-1">
+                    <img src="{{ asset('images/pemateri/pemateri-6.jpg') }}" alt="Pemateri MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent opacity-90 group-hover:opacity-95 transition-opacity"></div>
+                    <div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-[9px] font-mono tracking-widest text-indigo-200 uppercase font-semibold">
+                        LINI BISNIS
+                    </div>
+                    <div class="absolute bottom-0 inset-x-0 p-4 space-y-1 z-10 text-left">
+                        <h4 class="font-serif-custom text-base sm:text-lg font-normal text-white drop-shadow group-hover:text-indigo-200 transition-colors">
+                            Pengembang Bisnis Pemuda
+                        </h4>
+                        <p class="text-[11px] sm:text-xs text-white/80 font-sans leading-snug">
+                            Inkubator & Kewirausahaan MLUP
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Set 2: Duplicate of Pemateri 1 - 6 for Seamless Infinite Loop -->
+                <!-- Pemateri 1 Dup -->
+                <div class="w-52 sm:w-60 h-64 sm:h-72 rounded-2xl overflow-hidden relative group shrink-0 shadow-2xl border border-white/25 hover:border-sky-300/60 transition-all duration-300 hover:-translate-y-1">
+                    <img src="{{ asset('images/pemateri/pemateri-1.jpg') }}" alt="Pemateri MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent opacity-90 group-hover:opacity-95 transition-opacity"></div>
+                    <div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-[9px] font-mono tracking-widest text-sky-200 uppercase font-semibold">
+                        PEMATERI AKADEMIK
+                    </div>
+                    <div class="absolute bottom-0 inset-x-0 p-4 space-y-1 z-10 text-left">
+                        <h4 class="font-serif-custom text-base sm:text-lg font-normal text-white drop-shadow group-hover:text-sky-200 transition-colors">
+                            Pengajar Doktoral MLUP
+                        </h4>
+                        <p class="text-[11px] sm:text-xs text-white/80 font-sans leading-snug">
+                            Pakar & Mentor Akademik MLUP
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pemateri 2 Dup -->
+                <div class="w-52 sm:w-60 h-64 sm:h-72 rounded-2xl overflow-hidden relative group shrink-0 shadow-2xl border border-white/25 hover:border-sky-300/60 transition-all duration-300 hover:-translate-y-1">
+                    <img src="{{ asset('images/pemateri/pemateri-2.jpg') }}" alt="Pemateri MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent opacity-90 group-hover:opacity-95 transition-opacity"></div>
+                    <div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-[9px] font-mono tracking-widest text-amber-200 uppercase font-semibold">
+                        LINI SOSIAL
+                    </div>
+                    <div class="absolute bottom-0 inset-x-0 p-4 space-y-1 z-10 text-left">
+                        <h4 class="font-serif-custom text-base sm:text-lg font-normal text-white drop-shadow group-hover:text-amber-200 transition-colors">
+                            Mentor Ramadhan Berjaya
+                        </h4>
+                        <p class="text-[11px] sm:text-xs text-white/80 font-sans leading-snug">
+                            Praktisi & Pengajar Kebangsaan
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pemateri 3 Dup -->
+                <div class="w-52 sm:w-60 h-64 sm:h-72 rounded-2xl overflow-hidden relative group shrink-0 shadow-2xl border border-white/25 hover:border-sky-300/60 transition-all duration-300 hover:-translate-y-1">
+                    <img src="{{ asset('images/pemateri/pemateri-3.jpg') }}" alt="Pemateri MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent opacity-90 group-hover:opacity-95 transition-opacity"></div>
+                    <div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-[9px] font-mono tracking-widest text-emerald-200 uppercase font-semibold">
+                        KEPROFESIAN
+                    </div>
+                    <div class="absolute bottom-0 inset-x-0 p-4 space-y-1 z-10 text-left">
+                        <h4 class="font-serif-custom text-base sm:text-lg font-normal text-white drop-shadow group-hover:text-emerald-200 transition-colors">
+                            Pakar Karir & Industri
+                        </h4>
+                        <p class="text-[11px] sm:text-xs text-white/80 font-sans leading-snug">
+                            Konsultan & Pemateri LINTAS
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pemateri 4 Dup -->
+                <div class="w-52 sm:w-60 h-64 sm:h-72 rounded-2xl overflow-hidden relative group shrink-0 shadow-2xl border border-white/25 hover:border-sky-300/60 transition-all duration-300 hover:-translate-y-1">
+                    <img src="{{ asset('images/pemateri/pemateri-4.jpg') }}" alt="Pemateri MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent opacity-90 group-hover:opacity-95 transition-opacity"></div>
+                    <div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-[9px] font-mono tracking-widest text-sky-200 uppercase font-semibold">
+                        BEASISWA MLUP
+                    </div>
+                    <div class="absolute bottom-0 inset-x-0 p-4 space-y-1 z-10 text-left">
+                        <h4 class="font-serif-custom text-base sm:text-lg font-normal text-white drop-shadow group-hover:text-sky-200 transition-colors">
+                            Pendamping Beasiswa UKT
+                        </h4>
+                        <p class="text-[11px] sm:text-xs text-white/80 font-sans leading-snug">
+                            Tim Pengarah Akademis MLUP
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pemateri 5 Dup -->
+                <div class="w-52 sm:w-60 h-64 sm:h-72 rounded-2xl overflow-hidden relative group shrink-0 shadow-2xl border border-white/25 hover:border-sky-300/60 transition-all duration-300 hover:-translate-y-1">
+                    <img src="{{ asset('images/pemateri/pemateri-5.jpg') }}" alt="Pemateri MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent opacity-90 group-hover:opacity-95 transition-opacity"></div>
+                    <div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-[9px] font-mono tracking-widest text-purple-200 uppercase font-semibold">
+                        HOTLINE AKADEMIK
+                    </div>
+                    <div class="absolute bottom-0 inset-x-0 p-4 space-y-1 z-10 text-left">
+                        <h4 class="font-serif-custom text-base sm:text-lg font-normal text-white drop-shadow group-hover:text-purple-200 transition-colors">
+                            Mentor Riset & Doktoral
+                        </h4>
+                        <p class="text-[11px] sm:text-xs text-white/80 font-sans leading-snug">
+                            Peneliti & Dosen Mitra MLUP
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pemateri 6 Dup -->
+                <div class="w-52 sm:w-60 h-64 sm:h-72 rounded-2xl overflow-hidden relative group shrink-0 shadow-2xl border border-white/25 hover:border-sky-300/60 transition-all duration-300 hover:-translate-y-1">
+                    <img src="{{ asset('images/pemateri/pemateri-6.jpg') }}" alt="Pemateri MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent opacity-90 group-hover:opacity-95 transition-opacity"></div>
+                    <div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-[9px] font-mono tracking-widest text-indigo-200 uppercase font-semibold">
+                        LINI BISNIS
+                    </div>
+                    <div class="absolute bottom-0 inset-x-0 p-4 space-y-1 z-10 text-left">
+                        <h4 class="font-serif-custom text-base sm:text-lg font-normal text-white drop-shadow group-hover:text-indigo-200 transition-colors">
+                            Pengembang Bisnis Pemuda
+                        </h4>
+                        <p class="text-[11px] sm:text-xs text-white/80 font-sans leading-snug">
+                            Inkubator & Kewirausahaan MLUP
+                        </p>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 
