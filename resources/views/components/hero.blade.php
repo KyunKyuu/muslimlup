@@ -204,7 +204,7 @@
         </div>
     </div>
 
-    <!-- 3. Pemateri & Mentor Continuous Slide Animation Section (Clean Cards displaying Built-in PNG Text) -->
+    <!-- 3. Kontributor MLUP Continuous Slide Animation Section -->
     <div class="relative z-20 py-6 border-t border-white/30 bg-black/30 backdrop-blur-md overflow-hidden"
          x-data="{ 
              scrollLeft() { $refs.sliderTrack.scrollBy({ left: -300, behavior: 'smooth' }); },
@@ -216,7 +216,7 @@
             <div class="flex items-center gap-3">
                 <span class="inline-flex items-center gap-2 px-2.5 py-1 rounded border border-white/30 text-[10px] font-mono tracking-widest uppercase text-sky-200 bg-black/50 backdrop-blur-sm">
                     <span class="w-1.5 h-1.5 rounded-full bg-sky-400 animate-ping"></span>
-                    PEMATERI & MENTOR ACADEMY
+                    KONTRIBUTOR MLUP
                 </span>
                 <span class="text-xs text-white/80 font-sans hidden sm:inline-block">
                     — Belajar langsung bersama para pakar dan pengajar pilihan.
@@ -244,52 +244,52 @@
                 
                 <!-- Set 1: Pemateri 1 - 6 (Pure Built-in Image Text Display) -->
                 <div class="w-52 sm:w-60 h-64 sm:h-72 rounded-2xl overflow-hidden relative group shrink-0 shadow-2xl border border-white/25 hover:border-sky-300/60 transition-all duration-300 hover:-translate-y-1">
-                    <img src="{{ asset('images/pemateri/pemateri-1.jpg') }}" alt="Pemateri MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="{{ asset('images/pemateri/pemateri-1.jpg') }}" alt="Kontributor MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
 
                 <div class="w-52 sm:w-60 h-64 sm:h-72 rounded-2xl overflow-hidden relative group shrink-0 shadow-2xl border border-white/25 hover:border-sky-300/60 transition-all duration-300 hover:-translate-y-1">
-                    <img src="{{ asset('images/pemateri/pemateri-2.jpg') }}" alt="Pemateri MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="{{ asset('images/pemateri/pemateri-2.jpg') }}" alt="Kontributor MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
 
                 <div class="w-52 sm:w-60 h-64 sm:h-72 rounded-2xl overflow-hidden relative group shrink-0 shadow-2xl border border-white/25 hover:border-sky-300/60 transition-all duration-300 hover:-translate-y-1">
-                    <img src="{{ asset('images/pemateri/pemateri-3.jpg') }}" alt="Pemateri MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="{{ asset('images/pemateri/pemateri-3.jpg') }}" alt="Kontributor MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
 
                 <div class="w-52 sm:w-60 h-64 sm:h-72 rounded-2xl overflow-hidden relative group shrink-0 shadow-2xl border border-white/25 hover:border-sky-300/60 transition-all duration-300 hover:-translate-y-1">
-                    <img src="{{ asset('images/pemateri/pemateri-4.jpg') }}" alt="Pemateri MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="{{ asset('images/pemateri/pemateri-4.jpg') }}" alt="Kontributor MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
 
                 <div class="w-52 sm:w-60 h-64 sm:h-72 rounded-2xl overflow-hidden relative group shrink-0 shadow-2xl border border-white/25 hover:border-sky-300/60 transition-all duration-300 hover:-translate-y-1">
-                    <img src="{{ asset('images/pemateri/pemateri-5.jpg') }}" alt="Pemateri MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="{{ asset('images/pemateri/pemateri-5.jpg') }}" alt="Kontributor MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
 
                 <div class="w-52 sm:w-60 h-64 sm:h-72 rounded-2xl overflow-hidden relative group shrink-0 shadow-2xl border border-white/25 hover:border-sky-300/60 transition-all duration-300 hover:-translate-y-1">
-                    <img src="{{ asset('images/pemateri/pemateri-6.jpg') }}" alt="Pemateri MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="{{ asset('images/pemateri/pemateri-6.jpg') }}" alt="Kontributor MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
 
                 <!-- Set 2: Duplicate of Pemateri 1 - 6 for Seamless Infinite Loop -->
                 <div class="w-52 sm:w-60 h-64 sm:h-72 rounded-2xl overflow-hidden relative group shrink-0 shadow-2xl border border-white/25 hover:border-sky-300/60 transition-all duration-300 hover:-translate-y-1">
-                    <img src="{{ asset('images/pemateri/pemateri-1.jpg') }}" alt="Pemateri MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="{{ asset('images/pemateri/pemateri-1.jpg') }}" alt="Kontributor MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
 
                 <div class="w-52 sm:w-60 h-64 sm:h-72 rounded-2xl overflow-hidden relative group shrink-0 shadow-2xl border border-white/25 hover:border-sky-300/60 transition-all duration-300 hover:-translate-y-1">
-                    <img src="{{ asset('images/pemateri/pemateri-2.jpg') }}" alt="Pemateri MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="{{ asset('images/pemateri/pemateri-2.jpg') }}" alt="Kontributor MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
 
                 <div class="w-52 sm:w-60 h-64 sm:h-72 rounded-2xl overflow-hidden relative group shrink-0 shadow-2xl border border-white/25 hover:border-sky-300/60 transition-all duration-300 hover:-translate-y-1">
-                    <img src="{{ asset('images/pemateri/pemateri-3.jpg') }}" alt="Pemateri MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="{{ asset('images/pemateri/pemateri-3.jpg') }}" alt="Kontributor MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
 
                 <div class="w-52 sm:w-60 h-64 sm:h-72 rounded-2xl overflow-hidden relative group shrink-0 shadow-2xl border border-white/25 hover:border-sky-300/60 transition-all duration-300 hover:-translate-y-1">
-                    <img src="{{ asset('images/pemateri/pemateri-4.jpg') }}" alt="Pemateri MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="{{ asset('images/pemateri/pemateri-4.jpg') }}" alt="Kontributor MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
 
                 <div class="w-52 sm:w-60 h-64 sm:h-72 rounded-2xl overflow-hidden relative group shrink-0 shadow-2xl border border-white/25 hover:border-sky-300/60 transition-all duration-300 hover:-translate-y-1">
-                    <img src="{{ asset('images/pemateri/pemateri-5.jpg') }}" alt="Pemateri MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="{{ asset('images/pemateri/pemateri-5.jpg') }}" alt="Kontributor MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
 
                 <div class="w-52 sm:w-60 h-64 sm:h-72 rounded-2xl overflow-hidden relative group shrink-0 shadow-2xl border border-white/25 hover:border-sky-300/60 transition-all duration-300 hover:-translate-y-1">
-                    <img src="{{ asset('images/pemateri/pemateri-6.jpg') }}" alt="Pemateri MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="{{ asset('images/pemateri/pemateri-6.jpg') }}" alt="Kontributor MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
 
             </div>
