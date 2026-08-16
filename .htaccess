@@ -1,7 +1,11 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    
-    # Internal rewrite to public folder (no 301 redirect loops)
-    RewriteRule ^$ public/ [L]
-    RewriteRule (.*) public/$1 [L]
+
+    # If requested file or folder exists inside public/ (e.g. /images/..., /build/...), serve it
+    RewriteCond %{DOCUMENT_ROOT}/public%{REQUEST_URI} -f [OR]
+    RewriteCond %{DOCUMENT_ROOT}/public%{REQUEST_URI} -d
+    RewriteRule ^(.*)$ public/$1 [L]
+
+    # Route all dynamic application URLs (e.g. /admin/login, /admin/dashboard) to public/index.php
+    RewriteRule ^ public/index.php [L]
 </IfModule>
