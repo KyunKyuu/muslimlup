@@ -212,7 +212,7 @@
         </div>
     </div>
 
-    <!-- 3. Dynamic Kontributor MLUP Continuous Slide Animation Section -->
+    <!-- 3. Dynamic Kontributor MLUP Continuous Slide Animation Section (High-Speed Lazy Loading) -->
     <div class="relative z-20 py-6 border-t border-white/30 bg-black/30 backdrop-blur-md overflow-hidden"
          x-data="{ 
              scrollLeft() { $refs.sliderTrack.scrollBy({ left: -350, behavior: 'smooth' }); },
@@ -253,14 +253,22 @@
                 <!-- Set 1: Dynamic Contributor Cards -->
                 @foreach ($contributors as $contributor)
                     <div class="w-52 sm:w-60 h-64 sm:h-72 rounded-2xl overflow-hidden relative group shrink-0 shadow-2xl border border-white/25 hover:border-sky-300/60 transition-all duration-300 hover:-translate-y-1">
-                        <img src="{{ asset($contributor->image_path) }}" alt="Kontributor MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="{{ asset($contributor->image_path) }}" 
+                             alt="Kontributor MLUP Academy" 
+                             loading="lazy" 
+                             decoding="async" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
                 @endforeach
 
                 <!-- Set 2: Duplicate of Dynamic Contributor Cards for Seamless Infinite Loop -->
                 @foreach ($contributors as $contributor)
                     <div class="w-52 sm:w-60 h-64 sm:h-72 rounded-2xl overflow-hidden relative group shrink-0 shadow-2xl border border-white/25 hover:border-sky-300/60 transition-all duration-300 hover:-translate-y-1">
-                        <img src="{{ asset($contributor->image_path) }}" alt="Kontributor MLUP Academy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="{{ asset($contributor->image_path) }}" 
+                             alt="Kontributor MLUP Academy" 
+                             loading="lazy" 
+                             decoding="async" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
                 @endforeach
 
