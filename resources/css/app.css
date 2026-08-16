@@ -62,7 +62,7 @@
     }
 }
 
-/* Infinite Marquee Animation for Pemateri Slider */
+/* Infinite Marquee Animation for 27 Pemateri / Contributor Slider */
 @keyframes marquee-left {
     0% { transform: translateX(0%); }
     100% { transform: translateX(-50%); }
@@ -71,7 +71,7 @@
 .animate-marquee-left {
     display: flex;
     width: max-content;
-    animation: marquee-left 30s linear infinite;
+    animation: marquee-left 60s linear infinite;
 }
 
 .animate-marquee-left:hover {
