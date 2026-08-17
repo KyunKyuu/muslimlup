@@ -68,21 +68,6 @@
                      x-transition:leave-end="opacity-0 translate-y-2"
                      class="absolute top-full left-0 mt-2 w-64 rounded-2xl bg-slate-950/95 backdrop-blur-xl border border-white/25 shadow-2xl p-3 space-y-2 text-left z-50">
                     
-                    <!-- Sosial -->
-                    <div class="px-2 pt-1 pb-1 text-[10px] font-mono font-bold tracking-widest text-sky-300 uppercase">
-                        Sosial
-                    </div>
-                    <a href="https://ramadhanberjaya.com/" target="_blank" rel="noopener" class="flex items-center justify-between px-3 py-2 rounded-lg hover:bg-white/10 text-xs text-white/90 hover:text-white transition-colors">
-                        <span class="flex items-center gap-2">🌙 Ramadhan Berjaya</span>
-                        <i data-lucide="arrow-up-right" class="w-3 h-3 text-amber-300"></i>
-                    </a>
-                    <a href="https://riunganqurban.com/" target="_blank" rel="noopener" class="flex items-center justify-between px-3 py-2 rounded-lg hover:bg-white/10 text-xs text-white/90 hover:text-white transition-colors">
-                        <span class="flex items-center gap-2">🐑 PARQOUR</span>
-                        <i data-lucide="arrow-up-right" class="w-3 h-3 text-amber-300"></i>
-                    </a>
-
-                    <div class="border-t border-white/15 my-1"></div>
-
                     <!-- Akademik -->
                     <div class="px-2 pt-1 pb-1 text-[10px] font-mono font-bold tracking-widest text-sky-300 uppercase">
                         Akademik
@@ -90,6 +75,21 @@
                     <a href="https://hotline.muslimlup.org/" target="_blank" rel="noopener" class="flex items-center justify-between px-3 py-2 rounded-lg hover:bg-white/10 text-xs text-white/90 hover:text-white transition-colors">
                         <span class="flex items-center gap-2">📞 Hotline Akademik</span>
                         <i data-lucide="arrow-up-right" class="w-3 h-3 text-sky-300"></i>
+                    </a>
+
+                    <div class="border-t border-white/15 my-1"></div>
+
+                    <!-- Sosial -->
+                    <div class="px-2 pt-1 pb-1 text-[10px] font-mono font-bold tracking-widest text-sky-300 uppercase">
+                        Sosial
+                    </div>
+                    <a href="https://riunganqurban.com/" target="_blank" rel="noopener" class="flex items-center justify-between px-3 py-2 rounded-lg hover:bg-white/10 text-xs text-white/90 hover:text-white transition-colors">
+                        <span class="flex items-center gap-2">🐑 PARQOUR</span>
+                        <i data-lucide="arrow-up-right" class="w-3 h-3 text-amber-300"></i>
+                    </a>
+                    <a href="https://ramadhanberjaya.com/" target="_blank" rel="noopener" class="flex items-center justify-between px-3 py-2 rounded-lg hover:bg-white/10 text-xs text-white/90 hover:text-white transition-colors">
+                        <span class="flex items-center gap-2">🌙 Ramadhan Berjaya</span>
+                        <i data-lucide="arrow-up-right" class="w-3 h-3 text-amber-300"></i>
                     </a>
 
                     <div class="border-t border-white/15 my-1"></div>
@@ -164,9 +164,9 @@
             
             <div class="space-y-1.5 pl-3 border-l border-white/20 py-1">
                 <p class="text-[10px] font-mono text-sky-300 font-bold uppercase">Program</p>
-                <a @click="mobileOpen = false" href="https://ramadhanberjaya.com/" target="_blank" class="block text-white/90 text-xs py-1 hover:text-white">🌙 Ramadhan Berjaya ↗</a>
-                <a @click="mobileOpen = false" href="https://riunganqurban.com/" target="_blank" class="block text-white/90 text-xs py-1 hover:text-white">🐑 PARQOUR ↗</a>
                 <a @click="mobileOpen = false" href="https://hotline.muslimlup.org/" target="_blank" class="block text-white/90 text-xs py-1 hover:text-white">📞 Hotline Akademik ↗</a>
+                <a @click="mobileOpen = false" href="https://riunganqurban.com/" target="_blank" class="block text-white/90 text-xs py-1 hover:text-white">🐑 PARQOUR ↗</a>
+                <a @click="mobileOpen = false" href="https://ramadhanberjaya.com/" target="_blank" class="block text-white/90 text-xs py-1 hover:text-white">🌙 Ramadhan Berjaya ↗</a>
             </div>
 
             <a @click="mobileOpen = false" href="#tentang" class="block text-white/90 hover:text-white font-medium text-sm py-1">Tentang</a>
