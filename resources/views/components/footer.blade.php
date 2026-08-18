@@ -29,8 +29,8 @@
                     <a href="mailto:muslimlevelupacademy@gmail.com" class="flex items-center gap-2 hover:text-slate-950 transition-colors">
                         <i data-lucide="mail" class="w-4 h-4 text-slate-800"></i> muslimlevelupacademy@gmail.com
                     </a>
-                    <a href="https://wa.me/6285710465666" target="_blank" rel="noopener" class="flex items-center gap-2 hover:text-emerald-700 transition-colors">
-                        <i data-lucide="message-square" class="w-4 h-4 text-emerald-600"></i> 085710465666
+                    <a href="https://wa.me/6285782876666" target="_blank" rel="noopener" class="flex items-center gap-2 hover:text-emerald-700 transition-colors">
+                        <i data-lucide="message-square" class="w-4 h-4 text-emerald-600"></i> 085782876666
                     </a>
                 </div>
             </div>

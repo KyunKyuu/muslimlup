@@ -37,7 +37,7 @@
                 <i data-lucide="arrow-up-right" class="w-4 h-4 text-white"></i>
             </a>
 
-            <a href="https://wa.me/6285710465666" target="_blank" rel="noopener" 
+            <a href="https://wa.me/6285782876666" target="_blank" rel="noopener" 
                class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-emerald-800 font-bold rounded-xl border border-emerald-500/40 hover:bg-emerald-50 transition-all hover:scale-105 shadow-md text-sm tracking-wide">
                 <i data-lucide="message-square" class="w-4 h-4 text-emerald-600"></i>
                 <span>Kirim Pesan (WhatsApp)</span>
